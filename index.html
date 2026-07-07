@@ -1,0 +1,320 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jaime Berrios - Propuestas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <p class="eyebrow mb-3">Exploración visual de marca</p>
+        <h1 class="page-title fw-bold mb-3">Jaime Berrios - Propuestas</h1>
+        <p class="page-copy mb-0">
+          Compara tipografías, prueba colores de marca y alterna fondos claros u oscuros para evaluar cada propuesta en contexto.
+        </p>
+      </div>
+    </header>
+
+    <main class="container pb-5">
+      <section class="toolbar mb-4" aria-label="Controles de comparación">
+        <div class="d-flex flex-column flex-xl-row align-items-xl-end justify-content-between gap-3">
+          <div class="text-control">
+            <label class="toolbar-label mb-2" for="logoTextInput">Texto del logo</label>
+            <div class="input-group input-group-sm">
+              <span class="input-group-text"><i class="fa-solid fa-pen-nib"></i></span>
+              <input class="form-control" id="logoTextInput" type="text" value="Jaime Berrios" aria-label="Texto del logo">
+            </div>
+          </div>
+
+          <div class="size-control">
+            <label class="toolbar-label d-flex justify-content-between mb-2" for="logoSize">
+              <span>Tamaño global</span>
+              <span id="logoSizeValue">100%</span>
+            </label>
+            <input class="form-range" id="logoSize" type="range" min="80" max="120" value="100" step="5">
+          </div>
+
+          <div>
+            <p class="toolbar-label mb-2">Lectura pequeña</p>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Vista en tamaño pequeño">
+              <button class="btn btn-dark small-preview-toggle" type="button" data-small-preview="normal">
+                <i class="fa-solid fa-expand"></i>Normal
+              </button>
+              <button class="btn btn-outline-dark small-preview-toggle" type="button" data-small-preview="32">
+                <i class="fa-solid fa-mobile-screen-button"></i>32px
+              </button>
+              <button class="btn btn-outline-dark small-preview-toggle" type="button" data-small-preview="48">
+                <i class="fa-solid fa-id-badge"></i>48px
+              </button>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-dark btn-sm" id="monochromeToggle" type="button" aria-pressed="false">
+            <i class="fa-solid fa-circle-half-stroke"></i><span>Monocromático</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-altroned">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Altroned</h2>
+              <p class="proposal-description mb-3">Futurista, angular y con presencia de marca tecnológica.</p>
+              <p class="palette-note mb-0">Paleta de alto contraste para identidades digitales.</p>
+              <div class="swatch-row" aria-label="Colores para Altroned"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-audyno">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Audyno</h2>
+              <p class="proposal-description mb-3">Moderna, compacta y precisa para una imagen innovadora.</p>
+              <p class="palette-note mb-0">Tonos intensos para explorar energía y sofisticación.</p>
+              <div class="swatch-row" aria-label="Colores para Audyno"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-caviler">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Caviler</h2>
+              <p class="proposal-description mb-3">Geométrica, corporativa y estable para un perfil profesional.</p>
+              <p class="palette-note mb-0">Colores pensados para balancear seriedad y dinamismo.</p>
+              <div class="swatch-row" aria-label="Colores para Caviler"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-cyruz">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Cyruz</h2>
+              <p class="proposal-description mb-3">Branding tech con ritmo visual y cortes memorables.</p>
+              <p class="palette-note mb-0">Acentos vivos para probar impacto en fondos limpios.</p>
+              <div class="swatch-row" aria-label="Colores para Cyruz"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-vaslera">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Vaslera</h2>
+              <p class="proposal-description mb-3">Sans futurista con lectura clara y carácter técnico.</p>
+              <p class="palette-note mb-0">Paleta versátil para logo personal y piezas digitales.</p>
+              <div class="swatch-row" aria-label="Colores para Vaslera"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-galaksinos">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Galaksinos</h2>
+              <p class="proposal-description mb-3">Espacial, experimental y con personalidad disruptiva.</p>
+              <p class="palette-note mb-0">Opciones saturadas para evaluar presencia visual.</p>
+              <div class="swatch-row" aria-label="Colores para Galaksinos"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-geposa">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Geposa</h2>
+              <p class="proposal-description mb-3">Técnica, directa y de apariencia modular.</p>
+              <p class="palette-note mb-0">Cuatro tonos base para rutas de marca distintas.</p>
+              <div class="swatch-row" aria-label="Colores para Geposa"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-gespora">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Gespora</h2>
+              <p class="proposal-description mb-3">Amplia, espacial y con carácter de tecnología avanzada.</p>
+              <p class="palette-note mb-0">Pruebas cromáticas para fondos claros y negros.</p>
+              <div class="swatch-row" aria-label="Colores para Gespora"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-lerased">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Lerased Signature</h2>
+              <p class="proposal-description mb-3">Firma personal, cercana y con gesto humano.</p>
+              <p class="palette-note mb-0">Tonos premium para probar una identidad más editorial.</p>
+              <div class="swatch-row" aria-label="Colores para Lerased Signature"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-magonda">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Magonda</h2>
+              <p class="proposal-description mb-3">Script elegante, suave y orientada a marca personal.</p>
+              <p class="palette-note mb-0">Paleta útil para probar calidez sin perder contraste.</p>
+              <div class="swatch-row" aria-label="Colores para Magonda"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-maztech">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Maztech</h2>
+              <p class="proposal-description mb-3">Robusta, táctica y con una lectura industrial.</p>
+              <p class="palette-note mb-0">Colores fuertes para evaluar autoridad y precisión.</p>
+              <div class="swatch-row" aria-label="Colores para Maztech"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-moonstrike">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Moonstrike</h2>
+              <p class="proposal-description mb-3">Sci-fi, memorable y con trazos de alto impacto.</p>
+              <p class="palette-note mb-0">Acentos brillantes para explorar una identidad audaz.</p>
+              <div class="swatch-row" aria-label="Colores para Moonstrike"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-qinora">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Qinora</h2>
+              <p class="proposal-description mb-3">Logo sans contemporáneo, limpio y adaptable.</p>
+              <p class="palette-note mb-0">Opciones listas para marca personal profesional.</p>
+              <div class="swatch-row" aria-label="Colores para Qinora"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-ranked">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Ranked</h2>
+              <p class="proposal-description mb-3">Profesional, firme y asociada a rendimiento tecnológico.</p>
+              <p class="palette-note mb-0">Paleta para comparar sobriedad, energía y confianza.</p>
+              <div class="swatch-row" aria-label="Colores para Ranked"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-rocket">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Rocket Wildness</h2>
+              <p class="proposal-description mb-3">Elegante, experimental y con un toque aspiracional.</p>
+              <p class="palette-note mb-0">Colores intensos para probar presencia de lujo digital.</p>
+              <div class="swatch-row" aria-label="Colores para Rocket Wildness"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-sheirlyn">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Sheirlyn Cauplen</h2>
+              <p class="proposal-description mb-3">Caligráfica, personal y cálida para una firma distintiva.</p>
+              <p class="palette-note mb-0">Paleta de contraste para validar legibilidad en script.</p>
+              <div class="swatch-row" aria-label="Colores para Sheirlyn Cauplen"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-texar">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Texar</h2>
+              <p class="proposal-description mb-3">Tecnológica, balanceada y preparada para sistemas visuales.</p>
+              <p class="palette-note mb-0">Cuatro tonos para comparar arquitectura de marca.</p>
+              <div class="swatch-row" aria-label="Colores para Texar"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-trader">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Trader</h2>
+              <p class="proposal-description mb-3">Futurista, compacta y con energía de producto digital.</p>
+              <p class="palette-note mb-0">Paleta útil para presencia tech y piezas de alto contraste.</p>
+              <div class="swatch-row" aria-label="Colores para Trader"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="card proposal-card h-100">
+            <div class="logo-stage"><span class="logo-text font-zeta">Jaime Berrios</span></div>
+            <div class="controls">
+              <h2 class="proposal-title mb-1">Zeta Drive</h2>
+              <p class="proposal-description mb-3">Techno, veloz y diseñada para una marca de alto impacto.</p>
+              <p class="palette-note mb-0">Cuatro caminos cromáticos para comparar intención visual.</p>
+              <div class="swatch-row" aria-label="Colores para Zeta Drive"></div>
+              <button class="btn btn-outline-dark btn-sm theme-toggle mt-4" type="button"><i class="fa-solid fa-moon"></i><span>Fondo negro</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <div class="toast-lite" id="toastLite" role="status" aria-live="polite"></div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+

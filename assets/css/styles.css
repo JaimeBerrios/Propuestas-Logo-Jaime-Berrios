@@ -1,0 +1,385 @@
+﻿/* Fuentes locales para las propuestas de logo. */
+      @font-face {
+        font-family: "Altroned";
+        src: url("../fonts/altroned-tech-logo-font-2026-04-07-06-12-01-utc/ALTRONED/Web-TT/ALTRONED.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Audyno";
+        src: url("../fonts/audyno-modern-tech-typeface-2026-04-07-06-13-30-utc/Audyno.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "Caviler";
+        src: url("../fonts/caviler-geometric-corporate-sans-serif-font-2026-04-07-06-21-48-utc/Caviler.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Cyruz";
+        src: url("../fonts/cyruz-modern-branding-technology-logo-font-2026-04-07-06-21-42-utc/CYRUZ.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Vaslera";
+        src: url("../fonts/futuristic-tech-sans-serif-font-vaslera-2026-06-15-17-14-51-utc/Vaslera-Regular.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Vaslera Italic";
+        src: url("../fonts/futuristic-tech-sans-serif-font-vaslera-2026-06-15-17-14-51-utc/Vaslera-Italic.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Galaksinos";
+        src: url("../fonts/galaksinos-futuristic-tech-font-2026-04-07-06-10-21-utc/Galaksinos/Galaksinos.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Galaksinos Slant";
+        src: url("../fonts/galaksinos-futuristic-tech-font-2026-04-07-06-10-21-utc/Galaksinos Slant/Galaksinos Slant.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Geposa";
+        src: url("../fonts/geposa-tech-font-2026-04-07-06-11-50-utc/Geposa.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "Gespora";
+        src: url("../fonts/gespora-space-tech-font-2026-04-07-06-11-42-utc/Gespora.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "Lerased Signature";
+        src: url("../fonts/lerased-casual-signature-2026-04-07-06-12-09-utc/Lerased Signature.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "Magonda";
+        src: url("../fonts/magonda-casual-script-font-2026-04-07-06-12-53-utc/WOFF/Magonda.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Maztech";
+        src: url("../fonts/maztech-military-technology-font-2026-04-07-06-06-28-utc/Web-TT/Maztech.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "Moonstrike";
+        src: url("../fonts/moonstrike-futuristic-tech-font-2026-04-07-06-10-21-utc/Moonstrike/Moonstrike.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Qinora";
+        src: url("../fonts/qinora-sans-serif-logo-tech-font-2026-04-28-22-35-37-utc/Qinora.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Ranked";
+        src: url("../fonts/ranked-professional-technology-logo-font-2026-04-07-06-21-23-utc/RANKED.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Rocket Wildness";
+        src: url("../fonts/rocket-modern-elegant-logo-tech-font-2026-04-07-06-18-21-utc/ROCKET WILDNESS.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "Sheirlyn Cauplen";
+        src: url("../fonts/sheirlyn-cauplen-casual-script-2026-04-07-06-25-22-utc/Sheirlyn Cauplen.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Texar";
+        src: url("../fonts/texar-technology-font-family-2026-04-07-06-19-37-utc/TEXAR/TEXAR.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Texar Bold";
+        src: url("../fonts/texar-technology-font-family-2026-04-07-06-19-37-utc/TEXAR-Bold/TEXAR-Bold.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Texar Light";
+        src: url("../fonts/texar-technology-font-family-2026-04-07-06-19-37-utc/TEXAR-Light/TEXAR-Light.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Trader";
+        src: url("../fonts/trader-futuristic-tech-font-2026-04-07-06-21-00-utc/TRADER.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "Zeta Drive";
+        src: url("../fonts/zeta-drive-futuristic-techno-font-2026-04-07-06-18-46-utc/ZetaDrive.ttf") format("truetype");
+      }
+
+      :root {
+        --page-bg: #f8f9fa;
+        --ink: #15181c;
+        --muted: #667085;
+        --line: #e8edf2;
+        --midnight: #0b132b;
+        --electric: #00ffcc;
+        --purple: #4a00e0;
+        --crimson: #ef233c;
+      }
+
+      body {
+        background: var(--page-bg);
+        color: var(--ink);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .page-header {
+        padding: 4rem 0 2.5rem;
+      }
+
+      .eyebrow {
+        color: #4a5568;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .page-title {
+        font-size: clamp(2.4rem, 6vw, 4.9rem);
+        letter-spacing: 0;
+        line-height: 0.98;
+      }
+
+      .page-copy {
+        color: var(--muted);
+        font-size: 1.05rem;
+        max-width: 720px;
+      }
+
+      .toolbar {
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: 0 10px 26px rgba(16, 24, 40, 0.05);
+        padding: 1rem;
+        position: sticky;
+        top: 1rem;
+        z-index: 10;
+      }
+
+      .toolbar-label {
+        color: #344054;
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .size-control {
+        min-width: min(100%, 280px);
+      }
+
+      .text-control {
+        min-width: min(100%, 260px);
+      }
+
+      .toolbar .btn {
+        align-items: center;
+        display: inline-flex;
+        gap: 0.4rem;
+      }
+
+      .proposal-card {
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: 0 14px 34px rgba(16, 24, 40, 0.07);
+        overflow: hidden;
+        transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+      }
+
+      .logo-stage {
+        align-items: center;
+        background: #ffffff;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        justify-content: center;
+        min-height: 230px;
+        padding: 2rem 1.5rem;
+        transition: background-color 180ms ease, border-color 180ms ease;
+      }
+
+      .logo-text {
+        color: var(--midnight);
+        display: block;
+        font-size: calc(var(--logo-scale, 1) * clamp(2.35rem, 7vw, 4.4rem));
+        line-height: 1.04;
+        overflow-wrap: anywhere;
+        text-align: center;
+        transition: color 160ms ease;
+        width: 100%;
+      }
+
+      body.small-preview-32 .logo-stage,
+      body.small-preview-48 .logo-stage {
+        min-height: 132px;
+      }
+
+      body.small-preview-32 .logo-text {
+        font-size: calc(var(--logo-scale, 1) * 32px);
+      }
+
+      body.small-preview-48 .logo-text {
+        font-size: calc(var(--logo-scale, 1) * 48px);
+      }
+
+      body.is-monochrome .logo-text {
+        color: #111111 !important;
+      }
+
+      body.is-monochrome .proposal-card.is-dark .logo-text {
+        color: #ffffff !important;
+      }
+
+      body.is-monochrome .color-swatch {
+        filter: grayscale(1);
+        opacity: 0.62;
+      }
+
+      .controls {
+        display: flex;
+        flex-direction: column;
+        min-height: 230px;
+        padding: 1.35rem;
+      }
+
+      .proposal-title {
+        font-size: 1.05rem;
+        font-weight: 750;
+      }
+
+      .proposal-description,
+      .palette-note {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .swatch-row {
+        display: flex;
+        gap: 0.65rem;
+        margin-top: 0.85rem;
+      }
+
+      .color-swatch {
+        background: var(--swatch-color);
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px #d0d5dd;
+        height: 26px;
+        padding: 0;
+        transition: box-shadow 160ms ease, transform 160ms ease;
+        width: 26px;
+      }
+
+      .color-swatch:hover,
+      .color-swatch:focus-visible {
+        transform: translateY(-1px);
+      }
+
+      .color-swatch.is-active {
+        box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px rgba(11, 19, 43, 0.28);
+      }
+
+      .theme-toggle {
+        align-items: center;
+        border-radius: 999px;
+        display: inline-flex;
+        font-size: 0.86rem;
+        gap: 0.45rem;
+        margin-top: auto;
+        width: fit-content;
+      }
+
+      .copy-hint {
+        color: var(--muted);
+        font-size: 0.78rem;
+        margin-top: 0.45rem;
+      }
+
+      .proposal-card.is-dark {
+        background: #111111;
+        border-color: #242424;
+        color: #ffffff;
+      }
+
+      .proposal-card.is-dark .logo-stage {
+        background: #111111;
+        border-color: #242424;
+      }
+
+      .proposal-card.is-dark .proposal-description,
+      .proposal-card.is-dark .palette-note,
+      .proposal-card.is-dark .copy-hint {
+        color: #c9ced6;
+      }
+
+      .proposal-card.is-dark .color-swatch {
+        border-color: #111111;
+        box-shadow: 0 0 0 1px #505050;
+      }
+
+      .proposal-card.is-dark .color-swatch.is-active {
+        box-shadow: 0 0 0 2px #111111, 0 0 0 5px rgba(255, 255, 255, 0.38);
+      }
+
+      .font-altroned {
+        font-family: "Altroned", sans-serif;
+        font-size: calc(var(--logo-scale, 1) * clamp(1.65rem, 4.7vw, 3rem));
+      }
+      .font-audyno { font-family: "Audyno", sans-serif; }
+      .font-caviler { font-family: "Caviler", sans-serif; }
+      .font-cyruz { font-family: "Cyruz", sans-serif; }
+      .font-vaslera { font-family: "Vaslera", sans-serif; }
+      .font-vaslera-italic { font-family: "Vaslera Italic", sans-serif; }
+      .font-galaksinos { font-family: "Galaksinos", sans-serif; }
+      .font-galaksinos-slant { font-family: "Galaksinos Slant", sans-serif; }
+      .font-geposa { font-family: "Geposa", sans-serif; }
+      .font-gespora { font-family: "Gespora", sans-serif; }
+      .font-lerased { font-family: "Lerased Signature", cursive; }
+      .font-magonda { font-family: "Magonda", cursive; }
+      .font-maztech { font-family: "Maztech", sans-serif; }
+      .font-moonstrike { font-family: "Moonstrike", sans-serif; }
+      .font-qinora { font-family: "Qinora", sans-serif; }
+      .font-ranked { font-family: "Ranked", sans-serif; }
+      .font-rocket { font-family: "Rocket Wildness", sans-serif; }
+      .font-sheirlyn { font-family: "Sheirlyn Cauplen", cursive; }
+      .font-texar { font-family: "Texar", sans-serif; }
+      .font-texar-bold { font-family: "Texar Bold", sans-serif; }
+      .font-texar-light { font-family: "Texar Light", sans-serif; }
+      .font-trader { font-family: "Trader", sans-serif; }
+      .font-zeta { font-family: "Zeta Drive", sans-serif; }
+
+      .toast-lite {
+        background: #111827;
+        border-radius: 999px;
+        bottom: 1.25rem;
+        box-shadow: 0 12px 30px rgba(16, 24, 40, 0.18);
+        color: #ffffff;
+        font-size: 0.9rem;
+        left: 50%;
+        opacity: 0;
+        padding: 0.7rem 1rem;
+        pointer-events: none;
+        position: fixed;
+        transform: translate(-50%, 18px);
+        transition: opacity 160ms ease, transform 160ms ease;
+        z-index: 20;
+      }
+
+      .toast-lite.is-visible {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+
+      @media (max-width: 767.98px) {
+        .toolbar {
+          top: 0.5rem;
+        }
+      }

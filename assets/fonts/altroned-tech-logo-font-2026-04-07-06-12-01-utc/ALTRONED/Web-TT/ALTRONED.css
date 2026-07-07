@@ -1,0 +1,12 @@
+/* Webfont: ALTRONED-Regular */@font-face {
+    font-family: 'ALTRONED';
+    src: url('ALTRONED.eot'); /* IE9 Compat Modes */
+    src: url('ALTRONED.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('ALTRONED.woff') format('woff'), /* Modern Browsers */
+         url('ALTRONED.woff2') format('woff2'), /* Modern Browsers */
+         url('ALTRONED.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
