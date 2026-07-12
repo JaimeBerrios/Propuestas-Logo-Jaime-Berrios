@@ -62,6 +62,24 @@
         logo.style.color = card.dataset.color;
       }
 
+      function runThemeTransition(event, switchTheme) {
+        const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (!document.startViewTransition || shouldReduceMotion) {
+          switchTheme();
+          return;
+        }
+
+        document.documentElement.style.setProperty("--theme-toggle-x", `${event.clientX}px`);
+        document.documentElement.style.setProperty("--theme-toggle-y", `${event.clientY}px`);
+        document.documentElement.classList.add("theme-transition-active");
+
+        const transition = document.startViewTransition(switchTheme);
+        transition.finished.finally(() => {
+          document.documentElement.classList.remove("theme-transition-active");
+        });
+      }
+
       document.querySelectorAll(".proposal-card").forEach((card, cardIndex) => {
         const logo = card.querySelector(".logo-text");
         const swatchRow = card.querySelector(".swatch-row");
@@ -98,13 +116,15 @@
         copyHint.textContent = "Doble clic en un color para copiar el HEX.";
         swatchRow.after(copyHint);
 
-        themeButton.addEventListener("click", () => {
-          const isDark = card.classList.toggle("is-dark");
-          card.dataset.dark = String(isDark);
-          themeButton.classList.toggle("btn-outline-light", isDark);
-          themeButton.classList.toggle("btn-outline-dark", !isDark);
-          themeIcon.className = `fa-solid ${isDark ? "fa-sun" : "fa-moon"}`;
-          themeLabel.textContent = isDark ? "Fondo blanco" : "Fondo negro";
+        themeButton.addEventListener("click", (event) => {
+          runThemeTransition(event, () => {
+            const isDark = card.classList.toggle("is-dark");
+            card.dataset.dark = String(isDark);
+            themeButton.classList.toggle("btn-outline-light", isDark);
+            themeButton.classList.toggle("btn-outline-dark", !isDark);
+            themeIcon.className = `fa-solid ${isDark ? "fa-sun" : "fa-moon"}`;
+            themeLabel.textContent = isDark ? "Fondo blanco" : "Fondo negro";
+          });
         });
       });
 
@@ -145,4 +165,3 @@
           applyLogoColor(card, card.querySelector(".logo-text"));
         });
       });
-
